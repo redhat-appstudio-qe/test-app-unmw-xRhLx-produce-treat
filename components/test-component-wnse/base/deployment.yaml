@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-wnse
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:8159bd8f59e54bc880f3906f7b417286
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:7931a98e9380ae024812a6890a3cdce2f79f7e4b7a1cd40a752963e669bca792
         name: my-python
         ports:
         - containerPort: 8081
