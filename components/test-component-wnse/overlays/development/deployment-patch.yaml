@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-wnse
+  namespace: build-e2e-mpek-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:7931a98e9380ae024812a6890a3cdce2f79f7e4b7a1cd40a752963e669bca792
+        name: my-python
+        resources: {}
+status: {}
